@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const kisi={name:"sefa"};
+        const mapYapi=new Map();//yenı mapı vu sekılde olusturuyoruz
+        mapYapi.set(1,"sefa1");//set metodu ile yenı key value degerini mape eklıyoruz
+        mapYapi.set("kuru","sefa2");
+        mapYapi.set(true,"sefa3");
+        mapYapi.set(kisi,"sefa4");
+        console.log(mapYapi.has(kisi));//icerisinde kisi keyi olan var mı
+       console.log(mapYapi.get(1));//keyi 1 olanın degerini yazdiriyoruz
+        console.log(mapYapi.size);
+        
+        for(let x of mapYapi.keys()){
+            console.log(x);
+        }
+        for(let [key,value]of mapYapi.entries()){
+            console.log(key,value);//key value degerini verince entries giriyoruz ve bunları yazdırdıgımızda hepsini yazdırıyoruz mapin içindeki
+        }
+    </script>
+</body>
+</html>
